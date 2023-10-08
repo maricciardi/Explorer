@@ -1,0 +1,115 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+
+:root {
+    --light100: #ffffff;
+    --light400: #C4C4CC;
+    --light500: #7C7C8A;
+
+    --dark400: #000A0F;
+    --dark600: #00111A;
+    --dark700: #001119;
+    --dark900: #0D1D25;
+
+    --tomato100: #750310;
+    --tomato300: #AB222E;
+
+    --fonte-padrao: 'Roboto', sans-serif;
+    --fonte-destaque: 'Roboto', sans-serif;
+    --fonte-titulo: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark400);
+    height: 2400px;
+}
+
+header {
+    background-color: var(--dark600);
+    height: 104px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 36px 123px;
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#logoImg {
+    height: 30px;
+    width: 30px;
+}
+
+h3 {
+    color: var(--light100);
+    font-family: var(--fonte-destaque);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+#busca {
+    width: 581px;
+    height: 48px;
+    border-radius: 5px;
+    background-color: var(--dark900);
+    border: none;
+    padding-left: 137px;
+}
+
+#busca::placeholder {
+    font-family: var(--fonte-padrao);
+    font-size: 16px;
+}
+
+#order {
+    width: 216px;
+    height: 48px;
+    color: var(--light100);
+    background-color: var(--tomato100);
+    border: none;
+    border-radius: 5px;
+    font-family: var(--fonte-titulo);
+    font-size: 14px;
+}
+
+#order:hover {
+    cursor: pointer;
+    background-color: var(--tomato300);
+}
+
+#exit {
+    width: 24px;
+    height: 24px;
+    background-color: var(--dark600);
+    border: none;
+    border-radius: 5px;
+    background-image: url("data:image/svg+xml,%3Csvg width='25' height='24' viewBox='0 0 25 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.2891 6.75L23.5391 12M23.5391 12L18.2891 17.25M23.5391 12H9.53906M9.53906 23H2.53906C2.27385 23 2.01949 22.8946 1.83196 22.7071C1.64442 22.5196 1.53906 22.2652 1.53906 22V2C1.53906 1.73478 1.64442 1.48043 1.83196 1.29289C2.01949 1.10536 2.27385 1 2.53906 1H9.53906' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+
+#exit:hover {
+    cursor: pointer;
+}
+
+main {
+    height: 2219px;
+}
+
+
+footer {
+    background-color: var(--dark600);
+    height: 77px;
+    
+    padding: 28px 123px;
+}

@@ -33,7 +33,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 100px 108px 100px 154px;
+    margin: 142px 108px 142px 154px;
 }
 
 h1 {
@@ -52,7 +52,7 @@ h1 {
 
 #myform {
     background-color: var(--dark700);
-    height: 621px;
+    height: 540px;
     width: 476px;
     padding: 64px;
     border-radius: 16px;
@@ -95,7 +95,7 @@ legend {
     color: var(--light500);
 }
 
-#criarConta {
+#entrar {
     background-color: var(--tomato100);
     height: 48px;
     width: 348px;
@@ -108,12 +108,12 @@ legend {
     font-size: 14px;
 }
 
-#criarConta:hover {
+#entrar:hover {
     background-color: var(--tomato300);
     cursor: pointer;
 }
 
-#loginConta {
+#criarConta {
     background-color: var(--dark700);
     height: 48px;
     width: 348px;
@@ -126,8 +126,7 @@ legend {
     font-size: 14px;
 }
 
-#loginConta:hover {
+#criarConta:hover {
     text-decoration: underline;
     cursor: pointer;
 }
-

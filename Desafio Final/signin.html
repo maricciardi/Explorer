@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="shortcut icon" href="./Imagens - Food Explorer-v2/Logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./estilos/signin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="simbol">
+            <img src="./Imagens - Food Explorer-v2/Logo.png" alt="Logo">
+            <h1>food explorer</h1>
+        </div>  
+        <form id="myform">
+            <fieldset>
+                <legend>Faça login</legend>
+                <div class="input-wrapper">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="Exemplo: exemplo@exemplo.com.br">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="No mínimo 6 caracteres" minlength="6">
+                </div>
+
+                <input type="button" form="myform" value="Entrar" id="entrar">
+                <input type="button" form="myform" value="Criar uma conta" id="criarConta">
+            </fieldset>
+        </form>
+    </main> 
+</body>
+</html>
