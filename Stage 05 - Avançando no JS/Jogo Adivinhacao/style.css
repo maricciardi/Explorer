@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600&family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(288deg, #C2E9FB 0%, #A1C4FD 100%);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-size: 1.6rem;
+}
+
+section {
+    background-color: #FFFFFF;
+    width: min(42.8rem, 90%);
+    border-radius: .6rem;
+    box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.1);
+    padding: 4.8rem 6.4rem 6.4rem;
+    margin-top: -12rem;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+/*screen1*/
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    color: #34355B;
+    margin-bottom: 1.6rem;
+}
+
+p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.85rem;
+    color: rgba(52, 53, 91, 0.8);
+    margin-bottom: 4.8rem;
+    
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+#resp {
+    width: 4.2rem;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    color: #34355B;
+    background-color: #DCE2E9;
+    border: none;
+    border-radius: .4rem 0 0 .4rem;
+}
+
+#button {
+    height: 5.3rem;
+    width: 8.2rem;
+    background-color: #7879F1;
+    border: none;
+    border-radius: 0 .4rem .4rem 0;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#button:hover {
+    background-color: #6565da;
+}
+
+
+/*screen2*/
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    color: #34355B;
+    margin-bottom: 3.3rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+#buttonReset {
+    height: 5.3rem;
+    width: 16.6rem;
+    border-radius: .4rem;
+    font-weight: 600;
+    background-color: #7879F1;
+    border: none;
+    font-family: 'DM Sans', sans-serif;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#button2:hover {
+    background-color: #6565da;
+}
