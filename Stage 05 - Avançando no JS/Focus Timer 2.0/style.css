@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+:root {
+    --bg-color: hsl(0, 0, 100%);
+    --text-color: hsl(240, 6%, 21%);
+    --rain-color: hsl(194, 97%, 31%);
+    --button: hsl(240, 9%, 89%);
+
+    font-size: clamp(40%, 1% + 2vw, 62,5%);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: grid;
+    height: 100vh;
+}
+
+#app {
+    padding: 14rem 16rem 16rem 16rem;
+    justify-content: space-between;
+}
+
+#stopwatch {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+    
+}
+
+#timer {
+    font-size: 10rem;
+    line-height: 14.8rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+#controls {
+    justify-content: space-between;
+}
+
+#controls > button {
+    background-color: transparent;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 4.8rem;
+}
+
+#theme {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr); /*para criar duas linhas com altura igual*/
+    grid-template-columns: repeat(2, 1fr); /*para criar duas colunas com largura igual*/
+}
+
+#theme > button {
+    background-color: var(--button);
+    color: var(--text-color);
+    /*trocar imagem por class*/
+    border: none;
+}
+
+button.rain {
+    background-color: var(--rain-color);
+}
+
+/*controls*/
