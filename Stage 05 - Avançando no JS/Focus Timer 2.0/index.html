@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script type="module" src="./src/main.js" defer></script>
 </head>
 <body>
     <div id="app" class="flex">
@@ -20,21 +21,25 @@
                 <span id="seconds">00</span>
             </div>
             <div id="controls" class="flex">
-                <button
+                <button data-action="toggleRunning"
                 class="ph ph-play-circle"></button>
-                <button
+                <button data-action="reset"
                 class="ph ph-stop-circle"></button>
-                <button
+                <button data-action="addTime"
                 class="ph ph-plus-circle"></button>
-                <button
+                <button data-action="subtractTime"
                 class="ph ph-minus-circle"></button>
             </div>
         </div>
         <div id="theme">
-                <button><img src="./assets/tree.svg" alt="Árvore"></button>
-                <button><img src="./assets/rain.svg" alt="Chuva"></button>
-                <button><img src="./assets/market.svg" alt="Mercado"></button>
-                <button><img src="./assets/fire.svg" alt="Fogo"></button>
+                <button data-action="toggleMusicTree"
+                class="ph ph-tree "></button>
+                <button data-action="toggleMusicRain"
+                class="ph ph-cloud-rain "></button>
+                <button data-action="toggleMusicMarket"
+                class="ph ph-storefront "></button>
+                <button data-action="toggleMusicFire"
+                class="ph ph-campfire "></button>
         </div>
     </div>
 </body>

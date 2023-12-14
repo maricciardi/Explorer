@@ -3,17 +3,24 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 
 :root {
     --bg-color: hsl(0, 0, 100%);
     --text-color: hsl(240, 6%, 21%);
-    --rain-color: hsl(194, 97%, 31%);
+    --text-color-hover: hsl(240, 7%, 60%);
     --button: hsl(240, 9%, 89%);
+    --button-hover: hsl(240, 6%, 93%);
+    --rain-color: hsl(194, 97%, 31%);
+    --fire-color: hsl(27, 74%, 53%);
+    --tree-color: hsl(110, 35%, 61%);
+    --market-color: hsl(269, 55%, 62%);
 
     font-size: clamp(40%, 1% + 2vw, 62,5%);
 }
+
+
 
 body {
     background-color: var(--bg-color);
@@ -23,12 +30,14 @@ body {
 }
 
 #app {
-    padding: 14rem 16rem 16rem 16rem;
+    margin: 180px 280px 188px 280px;
     justify-content: space-between;
+    align-items: center;
 }
 
 #stopwatch {
     display: grid;
+    height: 213px;
 }
 
 .flex {
@@ -37,8 +46,7 @@ body {
 }
 
 #timer {
-    font-size: 10rem;
-    line-height: 14.8rem;
+    font-size: 8rem;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -51,24 +59,57 @@ body {
     border: none;
     color: var(--text-color);
     cursor: pointer;
-    font-size: 4.8rem;
+    font-size: 4rem;
+    margin-top: 10px;
+}
+
+#controls > button:hover {
+    color: var(--text-color-hover);
 }
 
 #theme {
     display: grid;
     grid-template-rows: repeat(2, 1fr); /*para criar duas linhas com altura igual*/
     grid-template-columns: repeat(2, 1fr); /*para criar duas colunas com largura igual*/
+    height: 336px;
 }
 
 #theme > button {
     background-color: var(--button);
     color: var(--text-color);
-    /*trocar imagem por class*/
     border: none;
+    font-size: 58px;
+    width: 138px;
+    height: 150px;
+    border-radius: 24px;
+    margin: 16px;
+    cursor: pointer;
 }
 
-button.rain {
-    background-color: var(--rain-color);
+#theme > button:hover {
+    background-color: var(--button-hover);
+    color: var(--text-color-hover);
 }
+
+#theme > button.rain {
+    background-color: var(--rain-color);
+    color: #fff;
+}
+
+#theme > button.fire {
+    background-color: var(--fire-color);
+    color: #fff;
+}
+
+#theme > button.tree {
+    background-color: var(--tree-color);
+    color: #fff;
+}
+
+#theme > button.market {
+    background-color: var(--market-color);
+    color: #fff;
+}
+
 
 /*controls*/
