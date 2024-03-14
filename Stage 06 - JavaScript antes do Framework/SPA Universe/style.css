@@ -2,21 +2,101 @@ body {
     margin: 0px;
     font-family: "Roboto", sans-serif;
     background-color: black;
-}
-
-#montanhas01 {
+    background-image: url(./assets/mountains-universe-1.png);
+    background-size: cover;
+    background-position: center;
     height: 100vh;
+    color: white;
 }
 
-.roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+/*mudar imagem do background dependendo da página?*/
+
+.page {
+  margin: 0px auto;
+  padding-top: 4rem;
+  padding-left: 7.2rem;
+  padding-right: 7.2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 55px;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 48px;
+  margin: 0;
+  padding: 0;
+}
+
+ul li a {
+  opacity: 0.5;
+}
+
+ul li a:hover {
+  font-weight: bold;
+  opacity: 1;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#logo {
+  height: 42px;
+}
+
+main {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
+  padding-top: 172px;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 60px;
+  text-align: left;
+  padding-top: 80px;
+}
+
+button {
+  background: none;
+  color: white;
+  font-size: 14px;
+  border: solid 1px white;
+  border-radius: 5px;
+  padding: 12px 32px 12px 32px;
   
-.roboto-bold {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
+  /*alinhar botão centro*/
+}
+
+button:hover {
+  color: #02799D;
+  background-color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+p {
+  font-weight: 400;
+  color: #E1E1E6;
+  max-width: 650px;
+}
+
+
+
+/*usando stage02/projeto02 pra fazer menu nav no css*/
+/*usando stage06/projeto07 pra fazer rotas*/
+
+/*ver aula pra adicionar servidor*/
